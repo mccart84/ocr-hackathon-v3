@@ -36,28 +36,33 @@
                     </div>
                 </div> -->
 
-                <b-field>
-                    <div class="content" style="width: 49%; float: left;">
-                        <b-upload v-model="dropFiles"
-                            multiple
-                            drag-drop>
-                            <section class="section">
-                                <div class="content has-text-centered">
-                                    <p>
-                                        <b-icon
-                                            icon="upload"
-                                            size="is-large">
-                                        </b-icon>
-                                    </p>
-                                    <p>Drop your files here or click to upload</p>
-                                </div>
-                            </section>
-                        </b-upload>
-                    </div>
-                    <div style="width: 49%; float: right; padding-top: 20px;">
-                        <b-progress size="is-small"></b-progress>
-                    </div>
-                </b-field>                
+                <div class="content" style="width: 49%; float: left;">
+                    <b-field>
+                            <b-upload v-model="dropFiles"
+                                multiple
+                                drag-drop>
+                                <section class="section">
+                                    <div class="content has-text-centered">
+                                        <p>
+                                            <b-icon
+                                                icon="upload"
+                                                size="is-large">
+                                            </b-icon>
+                                        </p>
+                                        <p>Drop your files here or click to upload</p>
+                                    </div>
+                                </section>
+                            </b-upload>
+                    </b-field>                
+                </div>
+                <div style="width: 49%; float: right; padding-top: 20px; padding-right: 20px">
+                    <!-- <b-progress size="is-small"></b-progress> -->
+                    <section>
+                        <b-field label="PO #">
+                            <b-input size="is-small" v-model="name"></b-input>
+                        </b-field>        
+                    </section>
+                </div>
             </div>
         </b-modal>
     </section>
@@ -91,16 +96,5 @@ export default {
 }
 .content-right {
     float: right;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 </style>
