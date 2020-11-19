@@ -37,7 +37,7 @@
                 </div> -->
 
                 <b-field>
-                    <div class="content" style="width: 45%; float: left;">
+                    <div class="content" style="width: 49%; float: left;">
                         <b-upload v-model="dropFiles"
                             multiple
                             drag-drop>
@@ -54,7 +54,7 @@
                             </section>
                         </b-upload>
                     </div>
-                    <div style="width: 45%; float: right; padding-top: 20px; padding-right: 20px;">
+                    <div style="width: 49%; float: right; padding-top: 20px;">
                         <b-progress size="is-small"></b-progress>
                     </div>
                 </b-field>                
